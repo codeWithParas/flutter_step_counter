@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ws_tb/LoginScreen.dart';
+import 'package:flutter_ws_tb/note_app/SqfliteDatabaseHelper.dart';
 
 void main() {
   //runApp(const MyApp());
+  SqfliteDatabaseHelper().initializeDatabase();
   runApp(FlutterTbWs());
 }
 

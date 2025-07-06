@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ws_tb/step_counter/HomePageScreen.dart';
 
+import 'note_app/NoteAppScreen.dart';
+
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
 
@@ -63,7 +65,8 @@ class LoginScreen extends StatelessWidget {
 
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const StepCounterScreen())
+                    //MaterialPageRoute(builder: (context) => const StepCounterScreen())
+                    MaterialPageRoute(builder: (context) => const NoteAppScreen())
                   );
 
                 } else {
