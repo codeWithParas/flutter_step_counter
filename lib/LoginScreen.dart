@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_ws_tb/movie_app/MovieAppScreen.dart';
 import 'package:flutter_ws_tb/step_counter/HomePageScreen.dart';
 
 import 'note_app/NoteAppScreen.dart';
@@ -65,8 +66,9 @@ class LoginScreen extends StatelessWidget {
 
                   Navigator.push(
                     context,
+                    MaterialPageRoute(builder: (context) => const MovieAppScreen())
                     //MaterialPageRoute(builder: (context) => const StepCounterScreen())
-                    MaterialPageRoute(builder: (context) => const NoteAppScreen())
+                    //MaterialPageRoute(builder: (context) => const NoteAppScreen())
                   );
 
                 } else {
